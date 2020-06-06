@@ -9,7 +9,7 @@ import { auth } from 'firebase/app';
 export class AuthService {
 
   constructor(private router: Router, public auth: AngularFireAuth) {
-    this.auth.authState.subscribe(user => console.log('user', user));
+    // this.auth.authState.subscribe(user => console.log('user', user));
   }
 
   public get user() {
@@ -19,8 +19,7 @@ export class AuthService {
   loginGoogle() {
     this.auth.signInWithPopup(new auth.GoogleAuthProvider())
       .then(data => {
-        console.log('logado com google', data.user);
-        this.router.navigate(['/'])
+        this.router.navigate(['profile'])
       })
       .catch(err => console.log(err))
   }

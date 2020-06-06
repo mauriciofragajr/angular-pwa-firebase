@@ -1,8 +1,11 @@
 <ul>
     <li>
-        <a [routerLink]="['home']">Home</a>
+        <a [routerLink]="['home']">Início</a>
     </li>
     <li>
-        <a [routerLink]="['profile']">Profile</a>
+        <a [routerLink]="['profile']">Perfil</a>
+    </li>
+    <li *ngIf="authService.user | async as user">
+        <a [routerLink]="['']" (click)="authService.logout()">Sair</a>
     </li>
 </ul>
