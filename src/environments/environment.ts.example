@@ -1,0 +1,20 @@
+export const environment = {
+  production: false,
+  firebaseConfig: {
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: "",
+    measurementId: ""
+  }
+};
+
+/*
+CRIAR DOIS ARQUIVOS A PARTIR DESSE 
+environment.prod.ts para produção
+e
+environment.ts para desenvolvimento
+*/

@@ -1,0 +1,13 @@
+<div *ngIf="authService.user | async as user; else showLogin" >
+    <h3>Olá {{ user.displayName }}</h3>
+    <div>
+        <button mat-raised-button (click)="authService.logout()" color="primary">Sair</button>
+    </div>
+</div>
+<ng-template #showLogin>
+    <div>
+        <h5>Faça o login para continuar
+        </h5>
+        <button mat-raised-button (click)="authService.loginGoogle()">Google</button>
+    </div>
+</ng-template>

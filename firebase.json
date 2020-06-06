@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "angular-pwa-firebase",
+      "public": "dist/angular-pwa-firebase",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

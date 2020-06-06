@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angular-pwa-firebase-6e305": {
+      "hosting": {
+        "angular-pwa-firebase": [
+          "angular-pwa-firebase-6e305"
+        ]
+      }
+    }
+  }
+}
